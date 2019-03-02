@@ -1,0 +1,519 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', serif, helvetica, sans-serif;
+  background-color: #251d1b;
+  color: #f5f0ed;
+}
+
+p {
+  font-size: 16px;
+}
+
+#logo {
+  position: absolute;
+  margin: 20px 0px 0px 30px;
+}
+
+#menu {
+  position: absolute;
+  right: 0px;
+  margin: 26px 40px 0px 0px;
+}
+
+#menumobile {
+  display: none;
+}
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 1em;
+  margin: 0;
+}
+
+a {
+  color: #f5f0ed;
+  text-decoration: none;
+}
+
+ul {
+  font-weight: 700;
+  list-style: none;
+  list-style-position: inside;
+  padding: 0px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.navegacion li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+}
+
+#hero1 {
+  background-image: url(imgs/Fondo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 663px;
+}
+
+.textohero {
+  text-align: center;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 0px;
+  margin-top: 60px;
+}
+
+.linea {
+  display: block;
+  background-color: #f5f0ed;
+  width: 90px;
+  min-height: 2px;
+  margin: 0px auto 25px auto;
+}
+
+h1 {
+  font-size: 44px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 1.1em;
+}
+
+.half {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.red {
+  background-color: #d03b40;
+  float: left;
+  width: 50%;
+  min-height: 400px;
+  color: #ded6c0;
+  margin: 0;
+  padding: 0 8% 0 8%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.beige {
+  background-color: #ded6c0;
+  float: left;
+  width: 50%;
+  min-height: 400px;
+  color: #d03b40;
+  padding: 0 8% 0 8%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+#hero2 {
+  background-image: url(imgs/Fondo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 550px;
+  margin-top: -5px;
+}
+
+#boton {
+  font-size: 14px;
+  text-transform: uppercase;
+  border: 3px solid #f5f0ed;
+  width: 300px;
+  margin: 50px auto;
+  padding: 0px;
+}
+
+.servicios {
+  display: inline-block;
+  overflow: visible;
+  background-color: #f5f0ed;
+  color: #3c3c3b;
+  margin: 0 0 -5px 0;
+  padding: 70px 30px 60px 30px;
+  width: 100%;
+}
+
+.servicioizq {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+.servicioder {
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+.imgpan {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  min-height: 170px;
+  width: 30%;
+  float: left;
+}
+
+.textoservicio {
+  padding: 0px 0px 0px 25px;
+  float: left;
+  width: 70%;
+  min-height: 200px;
+}
+
+.red a {
+  color: #ded6c0;
+  font-weight: 900;
+}
+
+.red a:hover {
+  border-bottom: 1px solid;
+}
+
+.beige a {
+  color: #d03b40;
+  font-weight: 900;
+}
+
+.beige a:hover {
+  border-bottom: 1px solid;
+}
+
+#icono1 {background-image: url(imgs/icono1.png);}
+#icono2 {background-image: url(imgs/icono2.png);}
+#icono3 {background-image: url(imgs/icono3.png);}
+#icono4 {background-image: url(imgs/icono4.png);}
+
+#footer {
+  background-color: #251d1b;
+  min-height: 170px;
+  padding-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin-top: -5px;
+}
+
+.textofooter {
+  display: flex;
+  float: left;
+}
+
+.textofooter p{
+  margin-right: 30px;
+}
+
+#footermobile {
+  display: none;
+}
+
+@media screen and (max-width: 320px) {
+
+  h1 {
+    font-size: 28px;
+    line-height: 1.1em;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  #logo {
+    width: 30%;
+    margin: 20px 0px 0px 17px;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #menumobile {
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: #d03b40;
+    position: absolute;
+    right: 0px;
+    margin: 30px 17px 0px 0px;
+  }
+
+  .hamburguer {
+    margin-top: 12px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+
+  .hamburguer span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin-bottom: 5px;
+    background: #ded6c0;
+    border-radius: 3px;
+  }
+
+  #hero1 {
+    min-height: 465px;
+  }
+
+  .textohero {
+    text-align: center;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 0px;
+    margin-top: 20px;
+  }
+
+  .half {
+    display: block;
+  }
+
+  .red {
+    float: none;
+    width: 100%;
+    min-height: 270px;
+    padding: 0 17px 0 17px;
+  }
+
+  .beige {
+    float: none;
+    width: 100%;
+    min-height: 270px;
+    padding: 0 17px 0 17px;
+  }
+
+  #hero2 {
+    background-position: -150px;
+    min-height: 405px;
+    margin: 0;
+    padding: 0;
+  }
+
+  #boton {
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 3px solid #f5f0ed;
+    max-width: 285px;
+    margin: 30px auto;
+    padding: 0px;
+  }
+
+  .servicios {
+    display: block;
+    margin: 0 0 -5px 0;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 55px 17px 25px 17px;
+  }
+
+  .servicioizq {
+    float: none;
+    width: 100%;
+    padding: 0px 0px 30px 0px;
+    overflow: hidden;
+  }
+
+  .servicioder {
+    float: none;
+    width: 100%;
+    padding: 0px 0px 30px 0px;
+    overflow: hidden;
+  }
+
+  .imgpan {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 80px;
+    width: 80px;
+    float: none;
+    margin: auto;
+  }
+
+  .textoservicio {
+    padding: 20px 0px 0px 0px;
+    float: none;
+    width: 100%;
+    min-height: 100px;
+    text-align: center;
+  }
+
+  h3 {
+    padding: 0px;
+    margin-bottom: -12px;
+  }
+
+  #footer {
+    display: none;
+  }
+
+  #footermobile {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background-color: #251d1b;
+    min-height: 100px;
+    padding-left: 17px;
+    margin-top: -5px;
+  }
+
+  .textofooter {
+    display: block;
+    float: none;
+  }
+
+  .textofooter p{
+    padding: 0px;
+    margin: 0px;
+  }
+
+}
+
+@media screen and (min-width: 321px) and (max-width: 800px) {
+
+  #menu {
+    position: absolute;
+    right: 0px;
+    margin: 30px 40px 0px 0px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  ul {
+    font-size: 15px;
+  }
+
+  #hero1 {
+    min-height: 600px;
+  }
+
+  .textohero {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 40px;
+  }
+
+  .half {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .red {
+    min-height: 280px;
+    padding: 0 7% 0 7%;
+
+  }
+
+  .beige {
+    min-height: 280px;
+    padding: 0 7% 0 7%;
+  }
+
+  #hero2 {
+    min-height: 400px;
+    margin-top: -5px;
+  }
+
+  .servicios {
+    display: block;
+    margin: 0 0 -5px 0;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 70px 60px 25px 60px;
+  }
+
+  .servicioizq {
+    float: none;
+    width: 100%;
+    padding: 0px 0px 30px 0px;
+    overflow: hidden;
+  }
+
+  .servicioder {
+    float: none;
+    width: 100%;
+    padding: 0px 0px 30px 0px;
+    overflow: hidden;
+  }
+
+  .imgpan {
+    min-height: 130px;
+    width: 25%;
+    float: left;
+  }
+
+  .textoservicio {
+    padding: 0 0 0 10px;
+    float: left;
+    width: 75%;
+    min-height: 150px;
+  }
+
+  #footer {
+    min-height: 100px;
+  }
+
+  #footer {
+    background-color: #251d1b;
+    min-height: 120px;
+    padding-left: 8%;
+  }
+
+  .textofooter {
+    display: flex;
+    float: left;
+  }
+
+  .textofooter p{
+    margin-right: 30px;
+  }
+
+}
